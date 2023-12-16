@@ -1,0 +1,20 @@
+
+.main-photo{
+    position: relative;
+    
+    animation: user-photo 4.4s linear infinite ;
+    
+    box-shadow: 1px 1px 3px 0 gray;
+  }
+  
+  @keyframes user-photo{
+    0%{
+      transfrom: scale(1);
+      filter: grayscale(0);
+    }
+    50%{
+      transform: scale(1.07);
+      filter: grayscale(100%);
+      box-shadow: none;
+    }
+}
