@@ -12,7 +12,7 @@ function App() {
   const contactRef = useRef(null);
 
   return (
-    <div className='flex flex-col items-center w-screen min-h-screen overflow-x-hidden font-calibri z-0'>
+    <div className='flex flex-col items-center w-screen min-h-screen overflow-x-hidden font z-0'>
       <Navbar projectRef={projectRef} skillRef={skillRef} contactRef={contactRef}/>
 
       <Home contactRef={contactRef}/>
