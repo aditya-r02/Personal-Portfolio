@@ -27,7 +27,7 @@ export default function Contact(){
                         <a href="mailto:ranaaditya01@outlook.com" >
                             <MdEmail/>
                         </a>
-                        <a href="www.google.co.in">
+                        <a href="https://twitter.com/Aditya_R02_">
                             <FaTwitterSquare/>
                         </a>
                         
