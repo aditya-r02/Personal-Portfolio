@@ -4,7 +4,7 @@ export const data = [
         "heading":"StudyNotion",
         "stack":"HTML, CSS, Javascript, ReactJS, NodeJS, MongoDB, ExpressJS",
         "url":"https://res.cloudinary.com/dqdy8u03v/image/upload/v1702746104/studynotion_yqw9a9.png",
-        "link":"https://github.com/aditya-r02/StudyNotion"
+        "link":"https://studynotion-by-adityarana.vercel.app/"
     },
     {
         "heading":"Sudoku Solver",
