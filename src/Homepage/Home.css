@@ -2,8 +2,6 @@
 .main-photo{
     position: relative;
     
-    animation: user-photo 4.4s linear infinite ;
-    
     box-shadow: 1px 1px 3px 0 gray;
   }
   

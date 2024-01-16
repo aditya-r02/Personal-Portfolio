@@ -1,6 +1,11 @@
 import Button from "../Extras/Button/Button";
 import image1 from "../images/user-photo.jpg";
 import './Home.css'
+import leetcode from '../images/icons/leetcode.svg';
+import github from '../images/icons/github.svg'
+import codeforces from '../images/icons/codeforces.svg'
+import linkedin from '../images/icons/linkedin.svg'
+import ReactTyped from "react-typed";
 
 export default function Home({contactRef}){
     const scrollTo = () =>{
@@ -19,7 +24,15 @@ export default function Home({contactRef}){
                 <p className="text-2xl laptop:text-5xl">Hello!</p>
                 <p className="text-2xl laptop:text-5xl">
                     I am&nbsp;
-                    <span className="text-blue-600 font-medium">Aditya Rana</span>
+                    <span className="text-blue-600 font-medium">
+                        <ReactTyped
+                            strings={['Aditya Rana', 'a Leetcoder', 'a Web Developer']}
+                            typeSpeed={60}
+                            backSpeed={49}
+                            loop
+                        />
+                                    
+                    </span>
                 </p>
                 <p className="text-center text-lg my-1 laptop:text-left laptop:text-xl">
                     I'm an engineering student passionate about web development.
@@ -33,8 +46,28 @@ export default function Home({contactRef}){
                 
             </div>
 
-            <div className="w-52 main-photo p-4 my-5 laptop:w-80">
+            <div className="w-52 main-photo p-4 my-5 laptop:w-80 relative">
                 <img src={image1} alt="person" className=""/>
+
+                <div className="flex flex-col text-4xl absolute top-5 -left-4 gap-3">
+
+                    <a href="https://github.com/aditya-r02" target="_blank" rel="noopener noreferrer">
+                        <img src={github} alt="github" className="w-10"/>
+                    </a>
+
+                    <a href="https://leetcode.com/aditya__r/" target="_blank" rel="noopener noreferrer">
+                        <img src={leetcode} alt="leetcode" className="w-10"/>
+                    </a>
+
+                    <a href="https://codeforces.com/profile/aditya_rana" target="_blank" rel="noopener noreferrer">
+                        <img src={codeforces} alt="codeforces" className="w-10"/>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/adityarana2003/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="linkedin" className="w-10"/>
+                    </a>
+        
+                </div>
             </div>
         </div>
     )
