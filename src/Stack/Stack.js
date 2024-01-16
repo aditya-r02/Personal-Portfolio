@@ -10,6 +10,11 @@ import express from "../images/icons/Express.png"
 import node from "../images/icons/NodeJs.svg"
 import mysql from "../images/icons/mysql.svg"
 import mongo from "../images/icons/MongoDB.svg"
+import git from '../images/icons/Git.svg'
+import github from '../images/icons/github.svg'
+import vercel from '../images/icons/Vercel.svg'
+
+
 
 export default function Stack(){
 
@@ -69,6 +74,19 @@ export default function Stack(){
                         
                     </div>
                 </div>
+
+                {/*Tools*/}
+                <div className="flex flex-col bg-gray-100 p-2 rounded-md gap-2">
+                    <h6 className="text-lg font-semibold laptop:text-xl">
+                        Tools
+                    </h6>
+                    <div className="flex flex-wrap items-center gap-3">
+                        <img src={git} alt="icon" className="w-16"/>
+                        <img src={github} alt="icon" className="w-16"/>
+                        <img src={vercel} alt="icon" className="w-16"/>
+                    </div>
+                </div>
+
             </div>
 
         </div>

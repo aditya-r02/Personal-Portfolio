@@ -13,9 +13,9 @@ export const data = [
         "link":"https://sudoku-solver-by-adityarana.vercel.app/"
     },
     {
-        "heading":"College Clubs",
+        "heading":"Blog Hub",
         "stack":"HTML, CSS, Javascript, ReactJS",
-        "url":"https://res.cloudinary.com/dqdy8u03v/image/upload/v1702746104/collegeclubs_xhy68g.png",
-        "link":"https://github.com/aditya-r02/College-Clubs"
+        "url":"https://res.cloudinary.com/dqdy8u03v/image/upload/v1705426400/BlogHub_dwny36.png",
+        "link":"https://bloghub-by-adityarana.vercel.app/"
     }
 ]
