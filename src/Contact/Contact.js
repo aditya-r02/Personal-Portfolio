@@ -6,7 +6,7 @@ export default function Contact() {
 
     return (
         <div className="w-full max-w-[75rem]  flex flex-col mb-4 dark:text-[#eeeeee]">
-            <h4 className="text-2xl font-medium mx-5 laptop:text-5xl">
+            <h4 className="text-3xl font-medium mx-5 laptop:text-5xl">
                 Contact Me
             </h4>
             <div className="flex flex-col gap-4 px-5 py-3 items-center laptop:flex-row

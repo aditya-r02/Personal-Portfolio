@@ -8,11 +8,11 @@ export default function Project() {
 
     return (
         <div className="w-full max-w-[75rem] py-4 dark:bg-[#222831] dark:text-[#EEEEEE]">
-            <h6 className="text-2xl font-medium mx-5 laptop:text-5xl">
+            <h6 className="text-3xl font-medium mx-5 laptop:text-5xl mb-2">
                 Projects
             </h6>
 
-            <div className="flex flex-col gap-4 px-5 py-3 laptop:flex-row w-full 
+            <div className="flex flex-col gap-4 px-5 pb-3 laptop:flex-row w-full 
              laptop:flex-wrap">
 
                 {

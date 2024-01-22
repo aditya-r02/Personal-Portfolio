@@ -21,7 +21,7 @@ export default function Stack() {
 
     return (
         <div className="w-full max-w-[75rem] my-4 dark:text-[#EEEEEE]">
-            <h4 className="text-2xl font-medium mx-5 laptop:text-5xl mb-2">
+            <h4 className="text-3xl font-medium mx-5 laptop:text-5xl mb-2">
                 My Tech Stack
             </h4>
 
