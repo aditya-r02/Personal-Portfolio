@@ -18,13 +18,13 @@ export default function Home({contactRef}){
 
     return (
         <div className="w-full flex flex-col mt-16 items-center gap-5 laptop:flex-row laptop:gap-10
-        laptop:justify-center">
+        laptop:justify-center dark:bg-[#222831] dark:text-[#EEEEEE]">
             <div className="flex flex-col items-center mx-2  laptop:max-w-[40rem]
             laptop:items-start laptop:gap-3">
                 <p className="text-2xl laptop:text-5xl">Hello!</p>
                 <p className="text-2xl laptop:text-5xl">
                     I am&nbsp;
-                    <span className="text-blue-600 font-medium">
+                    <span className="text-blue-600 font-medium dark:text-[#00ADB5]">
                         <ReactTyped
                             strings={['Aditya Rana', 'a Leetcoder', 'a Web Developer']}
                             typeSpeed={60}
@@ -46,10 +46,10 @@ export default function Home({contactRef}){
                 
             </div>
 
-            <div className="w-52 main-photo p-4 my-5 laptop:w-80 relative">
-                <img src={image1} alt="person" className=""/>
+            <div className="w-64 laptop:my-5 laptop:w-80 relative dark:shadow-photo mb-5 shadow-light-photo">
+                <img src={image1} alt="person" className="w-full"/>
 
-                <div className="flex flex-col text-4xl absolute top-5 -left-4 gap-3">
+                <div className="flex flex-col text-4xl absolute top-5 -left-4 gap-3 dark:left-1">
 
                     <a href="https://github.com/aditya-r02" target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="github" className="w-10"/>

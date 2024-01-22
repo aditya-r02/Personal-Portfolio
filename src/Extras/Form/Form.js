@@ -7,13 +7,14 @@ export default function Form(){
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col min-w-[18rem] bg-gray-100 p-2 rounded-md 
-        gap-3 laptop:p-4 laptop:gap-4 laptop:w-[25rem] border">
+        <form onSubmit={handleSubmit} className="flex flex-col w-full bg-gray-100 p-2 rounded-md 
+        gap-3 laptop:p-4 laptop:gap-4 laptop:w-[25rem] border dark:bg-[#393E46] dark:border-none">
             <label>
                 <p className="text-lg laptop:text-xl">
                     Name:
                 </p>
-                <input id="name" type="text" name="name" className="outline-none w-full text-lg laptop:text-xl"/>
+                <input id="name" type="text" name="name" className="outline-none w-full text-lg laptop:text-xl 
+                dark:bg-[#222831]"/>
                 <ValidationError 
                 prefix="Name" 
                 field="name"
@@ -24,7 +25,8 @@ export default function Form(){
                 <p className="text-lg laptop:text-xl">
                     Email:
                 </p>
-                <input id="email" type="email" name="email" className="outline-none w-full text-lg laptop:text-xl"/>
+                <input id="email" type="email" name="email" className="outline-none w-full text-lg laptop:text-xl 
+                dark:bg-[#222831]"/>
                 <ValidationError 
                 prefix="Email" 
                 field="email"
@@ -36,7 +38,8 @@ export default function Form(){
                 <p className="text-lg laptop:text-xl">
                     Message:
                 </p>
-                <textarea id="message" name="message" className="outline-none w-full text-lg laptop:text-xl"/>
+                <textarea id="message" name="message" className="outline-none w-full text-lg laptop:text-xl 
+                dark:bg-[#222831]"/>
                 <ValidationError 
                 prefix="Message" 
                 field="message"

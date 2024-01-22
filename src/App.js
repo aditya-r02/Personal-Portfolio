@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import Home from './Homepage/Home';
@@ -10,25 +10,32 @@ function App() {
   const projectRef = useRef(null);
   const skillRef = useRef(null);
   const contactRef = useRef(null);
+  const [mode, setMode] = useState(true);
+
+  const changeMode = (val) =>{
+    setMode(val);
+  }
 
   return (
-    <div className='flex flex-col items-center w-screen min-h-screen overflow-x-hidden font z-0'>
-      <Navbar projectRef={projectRef} skillRef={skillRef} contactRef={contactRef}/>
+    <div className={`${mode?'':'dark'}`}>
+      <div className='flex flex-col items-center w-screen min-h-screen overflow-x-hidden font z-0 dark:bg-[#222831]'>
+        <Navbar projectRef={projectRef} skillRef={skillRef} contactRef={contactRef} mode={mode} changeMode={changeMode}/>
 
-      <Home contactRef={contactRef}/>
+        <Home contactRef={contactRef} />
 
-      <div ref={projectRef} className='w-full flex items-center justify-center bg-gray-100'>
-        <Project/>
+        <div ref={projectRef} className='w-full flex items-center justify-center bg-gray-100 dark:bg-[#222831]'>
+          <Project />
+        </div>
+
+        <div ref={skillRef} className='w-full items-center flex justify-center'>
+          <Stack />
+        </div>
+
+        <div ref={contactRef} className='w-full flex items-center justify-center'>
+          <Contact />
+        </div>
+
       </div>
-      
-      <div ref={skillRef} className='w-full items-center flex justify-center'>
-        <Stack/>
-      </div>
-      
-      <div ref={contactRef} className='w-full flex items-center justify-center'>
-        <Contact/>
-      </div>
-      
     </div>
   );
 }
