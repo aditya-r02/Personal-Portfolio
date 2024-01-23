@@ -21,7 +21,7 @@ export default function Project() {
                             <InView triggerOnce>
                                 {({ inView, ref, entry }) => (
                                     <div className={`relative  ${inView ? 'card' : ''}`} ref={ref}>
-                                        <a href={project.link}
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer"
                                             className="flex flex-col shadow-card rounded-lg cursor-pointer
                                 laptop:w-72 w-full p-2 dark:bg-[#393E46] bg-white"
                                         >
