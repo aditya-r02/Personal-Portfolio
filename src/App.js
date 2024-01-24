@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import Home from './Homepage/Home';
@@ -12,8 +12,22 @@ function App() {
   const contactRef = useRef(null);
   const [mode, setMode] = useState(true);
 
+  
+
+  useEffect(()=>{
+    if (localStorage.getItem("mode") !==null){
+        setMode(localStorage.getItem("mode")==="true");
+        //console.log(localStorage.getItem("mode"));
+    }else{
+        localStorage.setItem("mode",true);
+        //console.log("Mode not found");
+    }
+},[])
+
   const changeMode = (val) =>{
     setMode(val);
+    localStorage.setItem("mode", val);
+    //console.log(localStorage.getItem("mode"));
   }
 
   return (

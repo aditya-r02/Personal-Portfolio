@@ -16,6 +16,8 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
         setOpen(!open);
     }
 
+    
+
     return (
         <div className="w-full flex justify-center items-center fixed z-50 bg-white border-b border-gray-200
         dark:bg-[#222831] dark:text-[#EEEEEE] dark:border-[#393E46] ">
@@ -74,9 +76,12 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
             </div>
 
             {/*Sidebar*/}
-            <div className={`${open ? 'absolute' : 'hidden'} top-0 right-0 left-0 dark:bg-white/30 bg-black/30  w-full h-screen`}
+            <div className={`${open ? 'absolute' : 'hidden'}  top-0 right-0 left-0 dark:bg-white/30 bg-black/40  w-full h-screen`}
                 onClick={() => { setOpen(false) }}>
-                <div className={`${open ? '' : 'translate-x-96 opacity-0'}  flex flex-col absolute top-12 right-4 items-end
+                
+            </div>
+
+            <div className={`${open ? '' : 'translate-x-96 opacity-0'} transition  flex flex-col absolute top-12 right-4 items-end
                  dark:bg-[#393E46] rounded-lg px-5 py-2 gap-3 bg-white`}>
                     <span onClick={() => { scrollTo(projectRef) }} className='cursor-pointer  select-none'>
                         Projects
@@ -105,7 +110,6 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
 
                     </div>
                 </div>
-            </div>
 
         </div>
     )

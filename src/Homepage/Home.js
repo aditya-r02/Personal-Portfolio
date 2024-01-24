@@ -49,7 +49,7 @@ export default function Home({contactRef}){
             <div className="w-64 laptop:my-5 laptop:w-80 relative dark:shadow-photo mb-5 shadow-light-photo">
                 <img src={image1} alt="person" className="w-full"/>
 
-                <div className="flex flex-col text-4xl absolute top-5 -left-4 gap-3 dark:left-1">
+                <div className="flex flex-col text-4xl absolute top-5  gap-3 right-1">
 
                     <a href="https://github.com/aditya-r02" target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="github" className="w-10"/>

@@ -18,7 +18,7 @@ export default function Project() {
                 {
                     data.map((project, index) => {
                         return (
-                            <InView triggerOnce>
+                            <InView triggerOnce key={index}>
                                 {({ inView, ref, entry }) => (
                                     <div className={`relative  ${inView ? 'card' : ''}`} ref={ref}>
                                         <a href={project.link} target="_blank" rel="noopener noreferrer"
