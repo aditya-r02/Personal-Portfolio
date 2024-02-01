@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import './Navbar.css'
 import { CiDark, CiLight } from "react-icons/ci";
-import { FiMenu } from "react-icons/fi";
 
 export default function Navbar({ projectRef, skillRef, contactRef, mode, changeMode }) {
     const scrollTo = (element) => {
@@ -39,19 +38,34 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
 
                 {/*Ul list*/}
                 <div className='flex gap-3 text-lg laptop:text-xl items-center'>
-                    <span onClick={() => { scrollTo(projectRef) }} className='cursor-pointer  select-none hidden laptop:inline'>
+                    {/* <span onClick={() => { scrollTo(projectRef) }} className='cursor-pointer  select-none hidden laptop:inline'>
                         Projects
                     </span>
                     <span onClick={() => { scrollTo(skillRef) }} className='cursor-pointer  select-none hidden laptop:inline'>
                         Skills
-                    </span>
-                    <span onClick={() => { scrollTo(contactRef) }} className='cursor-pointer hidden laptop:inline underline select-none'>
+                    </span> */}
+                    {/* <span onClick={() => { scrollTo(contactRef) }} className='cursor-pointer hidden laptop:inline underline select-none'>
                         Contact Me
-                    </span>
+                    </span> */}
 
-                    <span className='cursor-pointer laptop:hidden text-3xl text-black dark:text-white'
+                    {/*Resume Link*/}
+                    <a href='https://drive.google.com/file/d/1yAkJMgGTzwBbTzo53Aix2NT1DmZbXDRq/view?usp=drive_link'
+                    target='_black' referrerPolicy='no-referrer'
+                    className='hidden laptop:block'>
+                        Resume
+                    </a>
+
+                    {/*Three line menu bar*/}
+                    <span className='cursor-pointer laptop:hidden text-3xl text-black dark:text-white w-fit
+                    flex flex-col h-5 justify-around'
                         onClick={openModal}>
-                        <FiMenu />
+                        {/* <FiMenu /> */}
+                        <span className={`w-5 h-[2px] dark:bg-[#EEEEEE] bg-black
+                        ${open?'rotate-45 translate-y-2 duration-500':'rotate-0 translate-y-0 duration-500'}`}></span>
+                        <span className={`w-5 h-[2px] dark:bg-[#EEEEEE] bg-black
+                        ${open?'opacity-0':''}`}></span>
+                        <span className={`w-5 h-[2px] dark:bg-[#EEEEEE] bg-black
+                        ${open?'-rotate-45 -translate-y-[0.35rem] duration-500':'rotate-0 translate-y-0 duration-500'}`}></span>
                     </span>
 
                     {/*Change Mode*/}
@@ -89,9 +103,14 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                     <span onClick={() => { scrollTo(skillRef) }} className='cursor-pointer  select-none '>
                         Skills
                     </span>
-                    <span onClick={() => { scrollTo(contactRef) }} className='cursor-pointer  underline select-none'>
+                    <span onClick={() => { scrollTo(contactRef) }} className='cursor-pointer  select-none'>
                         Contact Me
                     </span>
+
+                    <a href='https://drive.google.com/file/d/1yAkJMgGTzwBbTzo53Aix2NT1DmZbXDRq/view?usp=drive_link'
+                    target='_black' referrerPolicy='no-referrer'>
+                        Resume
+                    </a>
 
                     {/*Change Mode*/}
                     <div className={`w-fit flex items-center transition duration-150
