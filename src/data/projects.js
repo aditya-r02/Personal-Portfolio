@@ -3,7 +3,7 @@ export const data = [
     
     {
         "heading":"Photo Gallery",
-        "stack":"Javascript, ReactJS, RESTful API, ExpressJS, NodeJS, MongoDB",
+        "stack":"ReactJS, RESTful API, ExpressJS, NodeJS, MongoDB",
         "url":"https://res.cloudinary.com/dqdy8u03v/image/upload/v1706778725/photogallery_oqm7uk.png",
         "link":"https://photogallery-by-adityarana.vercel.app/",
         "github":"https://github.com/aditya-r02/Gallery"
