@@ -12,8 +12,8 @@ export default function Project() {
                 Projects
             </h6>
 
-            <div className="flex flex-col gap-4 px-5 pb-3 laptop:flex-row w-full 
-             laptop:flex-wrap">
+            <div className="flex flex-col gap-4 px-5 pb-3 laptop:grid w-full laptop:grid-cols-3
+             ">
 
                 {
                     data.map((project, index) => {
@@ -23,7 +23,7 @@ export default function Project() {
                                     <div className={`relative  ${inView ? 'card' : ''}`} ref={ref}>
                                         <a href={project.link} target="_blank" rel="noopener noreferrer"
                                             className="flex flex-col shadow-card rounded-lg cursor-pointer
-                                laptop:w-72 w-full p-2 dark:bg-[#393E46] bg-white"
+                                laptop:w-full w-full p-2 dark:bg-[#393E46] bg-white"
                                         >
                                             <img src={project.url} alt="project_photo" loading="lazy"
                                                 className="w-full h-52 object-cover rounded-t-lg"

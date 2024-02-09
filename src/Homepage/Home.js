@@ -34,7 +34,7 @@ export default function Home({contactRef}){
                                     
                     </span>
                 </p>
-                <p className="text-center text-lg my-1 laptop:text-left laptop:text-xl">
+                <p className="text-center text-lg my-1 laptop:text-justify laptop:text-xl">
                     I'm an engineering student passionate about web development.
                     Welcome to my portfolio,
                     where you'll find a collection of my projects and a showcase of my skills as a web developer.
