@@ -5,7 +5,7 @@ import leetcode from '../images/icons/leetcode.svg';
 import github from '../images/icons/github.svg'
 import codeforces from '../images/icons/codeforces.svg'
 import linkedin from '../images/icons/linkedin.svg'
-import ReactTyped from "react-typed";
+import {ReactTyped} from "react-typed";
 
 export default function Home({contactRef}){
     const scrollTo = () =>{
