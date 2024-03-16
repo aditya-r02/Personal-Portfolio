@@ -20,10 +20,11 @@ import { InView } from 'react-intersection-observer';
 export default function Stack() {
 
     return (
-        <div className="w-full max-w-[75rem] my-4 dark:text-[#EEEEEE]">
-            <h4 className="text-3xl font-medium mx-5 laptop:text-5xl mb-2">
+        <div className="w-full max-w-[75rem] my-8 dark:text-[#EEEEEE]">
+            <h6 className="text-3xl font-medium mx-5 laptop:text-5xl mb-3 text-slate-800
+            dark:text-slate-100">
                 My Tech Stack
-            </h4>
+            </h6>
 
             <div className="flex flex-col px-5 gap-4 laptop:grid laptop:grid-cols-2">
                 {/*programming languages*/}

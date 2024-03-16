@@ -10,6 +10,7 @@ module.exports = {
       'calibri':["Calibri", "arial"],
     },
     screens:{
+      'sm':'640px',
       'laptop':'1024px'
     },
     boxShadow:{

@@ -7,13 +7,14 @@ export default function Project() {
 
 
     return (
-        <div className="w-full max-w-[75rem] py-4 dark:bg-[#222831] dark:text-[#EEEEEE]">
-            <h6 className="text-3xl font-medium mx-5 laptop:text-5xl mb-2">
+        <div className="w-full max-w-[75rem] py-8 dark:bg-[#222831] dark:text-[#EEEEEE]">
+            <h6 className="text-3xl font-medium mx-5 laptop:text-5xl mb-3 text-slate-800
+            dark:text-slate-100">
                 Projects
             </h6>
 
-            <div className="flex flex-col gap-4 px-5 pb-3 laptop:grid w-full laptop:grid-cols-3
-             ">
+            <div className="flex flex-col gap-4 px-5 laptop:grid w-full laptop:grid-cols-3
+             sm:grid sm:grid-cols-2">
 
                 {
                     data.map((project, index) => {

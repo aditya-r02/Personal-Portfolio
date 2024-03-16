@@ -8,7 +8,8 @@ export default function Form(){
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col w-full bg-gray-100 p-2 rounded-md 
-        gap-3 laptop:p-4 laptop:gap-4 laptop:w-[25rem] border dark:bg-[#393E46] dark:border-none">
+        gap-3 laptop:p-4 laptop:gap-4 laptop:w-[25rem] border dark:bg-[#393E46] dark:border-none
+        sm:w-full">
             <label>
                 <p className="text-lg laptop:text-xl">
                     Name:
