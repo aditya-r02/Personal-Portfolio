@@ -29,5 +29,11 @@ export const data = [
         "link":"https://studynotion-by-adityarana.vercel.app/",
         "github":"https://github.com/aditya-r02/StudyNotion"
     },
-    
+    {
+        "heading":"DevDetective",
+        "stack":"HTML, CSS, Javascript",
+        "url":"https://res.cloudinary.com/dqdy8u03v/image/upload/v1722170747/devdetective_pc3mm7.png",
+        "link":"https://devdetection.vercel.app/",
+        "github":"https://github.com/aditya-r02/DevDetection"
+    },
 ]
