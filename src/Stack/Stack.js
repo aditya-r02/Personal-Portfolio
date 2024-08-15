@@ -5,7 +5,7 @@ import css from "../images/icons/CSS.png"
 import react from "../images/icons/React.png"
 import redux from "../images/icons/Redux.svg"
 import tailwind from "../images/icons/Tailwind.png"
-import bootstrap from "../images/icons/Bootstrap.svg"
+//import bootstrap from "../images/icons/Bootstrap.svg"
 import express from "../images/icons/Express.png"
 import node from "../images/icons/NodeJs.svg"
 import mysql from "../images/icons/mysql.svg"
@@ -13,6 +13,11 @@ import mongo from "../images/icons/MongoDB.svg"
 import git from '../images/icons/Git.svg'
 import github from '../images/icons/github.svg'
 import vercel from '../images/icons/Vercel.svg'
+import ts from '../images/icons/ts.svg'
+import astro from '../images/icons/astro.svg'
+import postman from '../images/icons/postman.svg'
+import materialui from '../images/icons/material-ui.svg'
+import socket from '../images/icons/socketio-icon.svg'
 import '../Projects/Project.css'
 import { InView } from 'react-intersection-observer';
 
@@ -38,6 +43,7 @@ export default function Stack() {
                             <div className="flex flex-wrap items-center gap-3">
                                 <img src={c} alt="icon" className="w-16 " />
                                 <img src={js} alt="icon" className="w-16" />
+                                <img src={ts} alt="icon" className="w-16" />
                             </div>
                         </div>
                     )}
@@ -58,7 +64,8 @@ export default function Stack() {
                         <img src={react} alt="icon" className="w-16" />
                         <img src={redux} alt="icon" className="w-16" />
                         <img src={tailwind} alt="icon" className="w-16" />
-                        <img src={bootstrap} alt="icon" className="w-16" />
+                        <img src={materialui} alt="icon" className="w-16" />
+                        <img src={astro} alt="icon" className="w-16" />
                     </div>
                         </div>
                     )}
@@ -76,6 +83,7 @@ export default function Stack() {
                     <div className="flex flex-wrap items-center gap-3">
                         <img src={express} alt="icon" className="w-16" />
                         <img src={node} alt="icon" className="w-16" />
+                        <img src={socket} alt="icon" className="w-16" />
 
                     </div>
                         </div>
@@ -112,6 +120,7 @@ export default function Stack() {
                         <img src={git} alt="icon" className="w-16" />
                         <img src={github} alt="icon" className="w-16" />
                         <img src={vercel} alt="icon" className="w-16" />
+                        <img src={postman} alt="icon" className="w-16" />
                     </div>
                         </div>
                     )}
