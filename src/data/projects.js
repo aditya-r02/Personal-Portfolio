@@ -1,6 +1,12 @@
 
 export const data = [
-    
+    {
+        "heading":"ChatGig",
+        "stack":"MERN Stack, Socket.io, RESTful API, Tailwind",
+        "url":"https://res.cloudinary.com/dqdy8u03v/image/upload/v1723981689/chatgig_n2yfkw.png",
+        "link":"https://chatgig-by-adityarana.vercel.app/",
+        "github":"https://github.com/aditya-r02/ChatGig-backend"
+    },
     {
         "heading":"Photo Gallery",
         "stack":"ReactJS, RESTful API, ExpressJS, NodeJS, MongoDB",
