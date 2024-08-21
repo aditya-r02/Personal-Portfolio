@@ -18,6 +18,7 @@ import astro from '../images/icons/astro.svg'
 import postman from '../images/icons/postman.svg'
 import materialui from '../images/icons/material-ui.svg'
 import socket from '../images/icons/socketio-icon.svg'
+import redis from '../images/icons/redis.svg'
 import '../Projects/Project.css'
 import { InView } from 'react-intersection-observer';
 
@@ -41,9 +42,24 @@ export default function Stack() {
                                 Programming languages
                             </h6>
                             <div className="flex flex-wrap items-center gap-3">
-                                <img src={c} alt="icon" className="w-16 " />
-                                <img src={js} alt="icon" className="w-16" />
-                                <img src={ts} alt="icon" className="w-16" />
+                                <div className="relative group">
+                                    <img src={c} alt="icon" className="w-16" />
+                                    <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                        C++
+                                    </div>
+                                </div>
+                                <div className="relative group">
+                                    <img src={js} alt="icon" className="w-16" />
+                                    <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                        JavaScript
+                                    </div>
+                                </div>
+                                <div className="relative group">
+                                    <img src={ts} alt="icon" className="w-16" />
+                                    <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                        TypeScript
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     )}
@@ -59,13 +75,48 @@ export default function Stack() {
                         Frontend
                     </h6>
                     <div className="flex flex-wrap items-center gap-3">
-                        <img src={html} alt="icon" className="w-16" />
-                        <img src={css} alt="icon" className="w-16" />
-                        <img src={react} alt="icon" className="w-16" />
-                        <img src={redux} alt="icon" className="w-16" />
-                        <img src={tailwind} alt="icon" className="w-16" />
-                        <img src={materialui} alt="icon" className="w-16" />
-                        <img src={astro} alt="icon" className="w-16" />
+                        <div className="relative group">
+                            <img src={html} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                HTML
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={css} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                CSS
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={react} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                React.js
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={redux} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Redux
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={tailwind} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Tailwind
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={materialui} alt="icon" className="w-16" />
+                            <div className="w-fit absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Material UI
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={astro} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Astro
+                            </div>
+                        </div>
                     </div>
                         </div>
                     )}
@@ -81,10 +132,30 @@ export default function Stack() {
                         Backend
                     </h6>
                     <div className="flex flex-wrap items-center gap-3">
-                        <img src={express} alt="icon" className="w-16" />
-                        <img src={node} alt="icon" className="w-16" />
-                        <img src={socket} alt="icon" className="w-16" />
-
+                        <div className="relative group">
+                            <img src={express} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Express.js
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={node} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Node.js
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={socket} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Socket.io
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={redis} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Redis
+                            </div>
+                        </div>
                     </div>
                         </div>
                     )}
@@ -99,9 +170,18 @@ export default function Stack() {
                         Database
                     </h6>
                     <div className="flex flex-wrap items-center gap-3">
-                        <img src={mongo} alt="icon" className="w-16" />
-                        <img src={mysql} alt="icon" className="w-16" />
-
+                        <div className="relative group">
+                            <img src={mongo} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                MongoDB
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={mysql} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                MySQL
+                            </div>
+                        </div>
                     </div>
                         </div>
                     )}
@@ -117,10 +197,30 @@ export default function Stack() {
                         Tools
                     </h6>
                     <div className="flex flex-wrap items-center gap-3">
-                        <img src={git} alt="icon" className="w-16" />
-                        <img src={github} alt="icon" className="w-16" />
-                        <img src={vercel} alt="icon" className="w-16" />
-                        <img src={postman} alt="icon" className="w-16" />
+                        <div className="relative group">
+                            <img src={git} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Git
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={github} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Github
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={vercel} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Vercel
+                            </div>
+                        </div>
+                        <div className="relative group">
+                            <img src={postman} alt="icon" className="w-16" />
+                            <div className="absolute group-hover:opacity-100 opacity-0 bottom-[100%] left-0 dark:bg-slate-800 bg-white dark:text-white text-slate-900 px-2 py-1 rounded-md z-50 transition-opacity duration-200 border dark:border-slate-100 border-slate-800">
+                                Postman
+                            </div>
+                        </div>
                     </div>
                         </div>
                     )}

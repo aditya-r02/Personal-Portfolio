@@ -27,7 +27,7 @@ export default function Home({contactRef}){
                     I am&nbsp;
                     <span className="text-blue-600 font-medium dark:text-[#00ADB5]">
                         <ReactTyped
-                            strings={['Aditya Rana', 'a Leetcoder', 'a Web Developer']}
+                            strings={['Aditya Rana', 'a Leetcoder', 'a React Developer', 'a Backend Developer']}
                             typeSpeed={60}
                             backSpeed={49}
                             loop

@@ -10,7 +10,7 @@ function App() {
   const projectRef = useRef(null);
   const skillRef = useRef(null);
   const contactRef = useRef(null);
-  const [mode, setMode] = useState(true);
+  const [mode, setMode] = useState(false);
 
   
 
@@ -19,7 +19,7 @@ function App() {
         setMode(localStorage.getItem("mode")==="true");
         //console.log(localStorage.getItem("mode"));
     }else{
-        localStorage.setItem("mode",true);
+        localStorage.setItem("mode",false);
         //console.log("Mode not found");
     }
 },[])
