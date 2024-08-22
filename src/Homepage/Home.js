@@ -20,7 +20,7 @@ export default function Home({contactRef}){
         <div className="w-full flex flex-col mt-16 items-center gap-5 laptop:flex-row laptop:gap-10
         laptop:justify-center dark:bg-[#222831] dark:text-[#EEEEEE]
         laptop:h-[90vh] laptop:items-center">
-            <div className="flex flex-col items-center mx-3  laptop:max-w-[40rem]
+            <div className="flex flex-col items-center mx-3  laptop:max-w-[45rem]
             laptop:items-start laptop:gap-3">
                 <p className="text-2xl laptop:text-5xl">Hello!</p>
                 <p className="text-2xl laptop:text-5xl">

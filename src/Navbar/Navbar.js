@@ -69,7 +69,7 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                     </span>
 
                     {/*Change Mode*/}
-                    <div className={`hidden laptop:flex items-center transition duration-150 
+                    {/* <div className={`hidden laptop:flex items-center transition duration-150 
                       ${mode ? 'bg-blue-500' : 'bg-black'} py-1 rounded-full px-1 cursor-pointer`}
                         onClick={() => { changeMode(!mode) }}>
 
@@ -83,7 +83,7 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                             <CiDark />
                         </span>
 
-                    </div>
+                    </div> */}
 
 
                 </div>
@@ -113,7 +113,7 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                     </a>
 
                     {/*Change Mode*/}
-                    <div className={`w-fit flex items-center transition duration-150
+                    {/* <div className={`w-fit flex items-center transition duration-150
                       ${mode ? 'bg-blue-500' : 'bg-black'} py-1 rounded-full px-1 cursor-pointer`}
                         onClick={() => { changeMode(!mode) }}>
 
@@ -127,7 +127,7 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                             <CiDark />
                         </span>
 
-                    </div>
+                    </div> */}
                 </div>
 
         </div>
