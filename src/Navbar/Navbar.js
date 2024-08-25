@@ -49,7 +49,7 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                     </span> */}
 
                     {/*Resume Link*/}
-                    <a href='https://drive.google.com/file/d/1yAkJMgGTzwBbTzo53Aix2NT1DmZbXDRq/view?usp=drive_link'
+                    <a href='https://drive.google.com/drive/folders/19pAgkMMll0c61PBwXYW5jgPPg8-7-rKf'
                     target='_black' referrerPolicy='no-referrer'
                     className='hidden laptop:block'>
                         Resume
@@ -107,7 +107,7 @@ export default function Navbar({ projectRef, skillRef, contactRef, mode, changeM
                         Contact Me
                     </span>
 
-                    <a href='https://drive.google.com/file/d/1yAkJMgGTzwBbTzo53Aix2NT1DmZbXDRq/view?usp=drive_link'
+                    <a href='https://drive.google.com/drive/folders/19pAgkMMll0c61PBwXYW5jgPPg8-7-rKf'
                     target='_black' referrerPolicy='no-referrer'>
                         Resume
                     </a>
